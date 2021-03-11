@@ -1,10 +1,3 @@
-/*
- * project5.c
- *
- * Created: 6/4/2019 11:33:42 AM
- * Author : Victor V. Tran
- */ 
-
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <avr/pgmspace.h>
@@ -737,7 +730,7 @@ ISR(ADC_vect) {
 
 int main(void) {
 	srand(time(NULL));
-	DDRA = 0b10111111;			// Data Direction Register: Set input/output pins of portA
+	DDRA = 0b11111111;			// Data Direction Register: Set input/output pins of portA
 	lcd_init();					// Initiate LCD Screen proper ports setup
 	
 	TCCR1B |= (1<<CS12); 		// Timer1 set 256 as Prescalar for higher period

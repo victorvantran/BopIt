@@ -1,11 +1,3 @@
-/*
- * avr.h
- *
- * Created: 6/4/2019 11:35:06 AM
- *  Author: Victor
- */ 
-
-
 #ifndef AVR_H_
 #define AVR_H_
 
